@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../simpleprocessor.srcs/sources_1/new/simpleprocessor.v" \
+"../../../../simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec  6 14:57:16 2021
+# Process ID: 18372
+# Current directory: H:/Comp Eng Lab I/simpleprocessor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21556 H:\Comp Eng Lab I\simpleprocessor\simpleprocessor.xpr
+# Log file: H:/Comp Eng Lab I/simpleprocessor/vivado.log
+# Journal file: H:/Comp Eng Lab I/simpleprocessor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 703.121 ; gain = 54.832
+update_compile_order -fileset sources_1
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/simulate.log"
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  6 14:58:01 2021...

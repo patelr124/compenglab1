@@ -1,0 +1,1637 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec  5 17:01:20 2021
+# Process ID: 18360
+# Current directory: H:/Comp Eng Lab I/simpleprocessor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6236 H:\Comp Eng Lab I\simpleprocessor\simpleprocessor.xpr
+# Log file: H:/Comp Eng Lab I/simpleprocessor/vivado.log
+# Journal file: H:/Comp Eng Lab I/simpleprocessor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 698.305 ; gain = 62.539
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+ERROR: [VRFC 10-4982] syntax error near 'end' [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v:55]
+ERROR: [VRFC 10-2790] Verilog 2000 keyword end used in incorrect context [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v:55]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register op_code is not permitted, left-hand side should be reg/integer/time/genvar [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v:107]
+ERROR: [VRFC 10-2865] module 'simpleprocessor' ignored due to previous errors [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 742.566 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+file mkdir H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new
+file mkdir H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new
+file mkdir H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new
+file mkdir H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new
+file mkdir H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new
+file mkdir {H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new}
+close [ open {H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v} w ]
+add_files -fileset sim_1 {{H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source H:/Comp -notrace
+couldn't read file "H:/Comp": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec  5 17:19:18 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 752.617 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File H:Comp Eng Lab ILab 4data.mem referenced on H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v at line 29 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 797.031 ; gain = 30.078
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 797.031 ; gain = 44.414
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File H:Comp Eng Lab ILab 4data.mem referenced on H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v at line 29 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 825.672 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File H:Comp Eng Lab ILab 4data.mem referenced on H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v at line 29 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 825.672 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File H:Comp Eng Lab ILab 4data.txt referenced on H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v at line 29 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 825.672 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File H:Comp Eng Lab ILab 4data.txt referenced on H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v at line 29 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 825.672 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+WARNING: [VRFC 10-3205] cannot select 'memoryArray' inside 'memory' due to dimension mismatch [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v:29]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2991] 'memoryArray' is not declared under prefix 'memory' [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v:29]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 825.672 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File H:Comp Eng Lab ILab 4data.txt referenced on H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v at line 29 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 825.672 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File H:Comp Eng Lab ILab 4data.txt referenced on H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v at line 29 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 825.672 ; gain = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{H:/Comp Eng Lab I/Lab 4/data.mem}}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File H:Comp Eng Lab ILab 4data.mem referenced on H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v at line 29 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 825.672 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File H:Comp Eng Lab ILab 4data.mem referenced on H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v at line 29 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 825.672 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+could not find scope or owning scope
+could not find scope or owning scope
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File H:Comp Eng Lab ILab 4data.mem referenced on H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v at line 29 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 922.367 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+could not find scope or owning scope
+could not find scope or owning scope
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File H:Comp Eng Lab ILab 4data.mem referenced on H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v at line 29 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 922.367 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+current_wave_config {Untitled 11}
+Untitled 11
+add_wave {{/simpleprocessor_tb/uut1/memory[1]}} 
+current_wave_config {Untitled 11}
+Untitled 11
+add_wave {{/simpleprocessor_tb/uut1/memory}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+could not find scope or owning scope
+could not find scope or owning scope
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File H:Comp Eng Lab ILab 4data.mem referenced on H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v at line 29 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 922.367 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+could not find scope or owning scope
+could not find scope or owning scope
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File H:Comp Eng Lab ILab 4data.mem referenced on H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v at line 29 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 922.367 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+could not find scope or owning scope
+could not find scope or owning scope
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 922.367 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+could not find scope or owning scope
+could not find scope or owning scope
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 922.367 ; gain = 0.000
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Data truncated while reading Datafile: data.mem, while loading at index: 1
+WARNING: Data truncated while reading Datafile: data.mem, while loading at index: 2
+WARNING: Data truncated while reading Datafile: data.mem, while loading at index: 3
+WARNING: Data truncated while reading Datafile: data.mem, while loading at index: 4
+WARNING: Data truncated while reading Datafile: data.mem, while loading at index: 5
+WARNING: Data truncated while reading Datafile: data.mem, while loading at index: 6
+WARNING: Data truncated while reading Datafile: data.mem, while loading at index: 7
+WARNING: Data truncated while reading Datafile: data.mem, while loading at index: 8
+WARNING: Data truncated while reading Datafile: data.mem, while loading at index: 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 922.367 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 922.367 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 922.367 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 922.367 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 922.367 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 936.605 ; gain = 14.238
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+ERROR: [VRFC 10-3642] port 'memory' must not be declared to be an array [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v:6]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register memory is not permitted, left-hand side should be reg/integer/time/genvar [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v:103]
+ERROR: [VRFC 10-2865] module 'simpleprocessor' ignored due to previous errors [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+ERROR: [VRFC 10-3642] port 'memory' must not be declared to be an array [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v:6]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register memory is not permitted, left-hand side should be reg/integer/time/genvar [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v:103]
+ERROR: [VRFC 10-2865] module 'simpleprocessor' ignored due to previous errors [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 976.121 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 976.121 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+ERROR: [VRFC 10-3642] port 'memory' must not be declared to be an array [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v:6]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register memory is not permitted, left-hand side should be reg/integer/time/genvar [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v:103]
+ERROR: [VRFC 10-2865] module 'simpleprocessor' ignored due to previous errors [H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simpleprocessor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [SIM-utils-43] Exported 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simpleprocessor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sources_1/new/simpleprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.srcs/sim_1/new/simpleprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+"xelab -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d8cdce6a826d4c39820dd1af2f0284c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleprocessor_tb_behav xil_defaultlib.simpleprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleprocessor
+Compiling module xil_defaultlib.simpleprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simpleprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Comp Eng Lab I/simpleprocessor/simpleprocessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simpleprocessor_tb_behav -key {Behavioral:sim_1:Functional:simpleprocessor_tb} -tclbatch {simpleprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simpleprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simpleprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 976.141 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  5 19:07:44 2021...
